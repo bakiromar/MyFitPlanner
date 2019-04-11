@@ -7,7 +7,6 @@ import {KittenTheme} from './theme';
 import {AvatarTypes} from '../components/avatar/types';
 import {GradientButtonTypes} from '../components/gradientButton/types';
 import {SwitchTypes} from '../components/switch/types';
-import {SocialBarTypes} from '../components/socialBar/types';
 import {scale, scaleModerate, scaleVertical} from '../utils/scale';
 
 export let bootstrap = () => {
@@ -408,74 +407,6 @@ export let bootstrap = () => {
     }
   });
 
-  RkTheme.setType('RkCard', 'blog', {
-    header: {
-      paddingHorizontal: 16,
-      paddingVertical: 0,
-      paddingTop: 16,
-    },
-    content: {
-      padding: 0,
-      paddingVertical: 0,
-      paddingTop: 12
-    },
-    footer: {
-      paddingHorizontal: 16,
-      paddingTop: 15,
-      paddingBottom: 16,
-      alignItems: 'center'
-    }
-  });
-
-  RkTheme.setType('RkCard', 'article', {
-    container: {
-      borderWidth: 0,
-      backgroundColor: 'transparent'
-    },
-    header: {
-      paddingVertical: 0,
-      paddingTop: 20,
-      paddingBottom: 16,
-      justifyContent: 'space-between',
-      borderBottomWidth: StyleSheet.hairlineWidth,
-      borderColor: theme => theme.colors.border.base
-    },
-    content: {
-      padding: 16,
-      borderBottomWidth: 1,
-      borderColor: theme => theme.colors.border.base
-    },
-    footer: {
-      paddingHorizontal: 14,
-      paddingTop: 15,
-      paddingBottom: 16,
-      alignItems: 'center'
-    }
-  });
-
-  RkTheme.setType('RkCard', 'credit', {
-    container: {
-      borderWidth: 0,
-      borderRadius: 7
-    },
-    header: {
-      justifyContent: 'space-between',
-      paddingHorizontal: 14,
-      alignItems: 'center',
-      paddingBottom: scaleVertical(46)
-    },
-    content: {
-      alignItems: 'center',
-      paddingVertical: 0
-    },
-    footer: {
-      paddingBottom: scaleVertical(14),
-      paddingTop: scaleVertical(16),
-      paddingHorizontal: 14,
-      alignItems: 'flex-end'
-    }
-  });
-
   /*
    Register components
    */
@@ -483,7 +414,6 @@ export let bootstrap = () => {
   RkTheme.registerComponent('Avatar', AvatarTypes);
   RkTheme.registerComponent('GradientButton', GradientButtonTypes);
   RkTheme.registerComponent('RkSwitch', SwitchTypes);
-  RkTheme.registerComponent('SocialBar', SocialBarTypes);
 
   StatusBar.setBarStyle('dark-content', true);
 };
