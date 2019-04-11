@@ -90,7 +90,6 @@ settings_screen: { screen: Settings_Screen },
     },
     {
       navigationOptions: {
-        title: 'Welcome to Fitness Planner',
         headerLeft: null,
         headerStyle: {
            backgroundColor: 'white',
@@ -127,7 +126,7 @@ settings_screen: { screen: Settings_Screen },
       reset_screen: { screen: Reset_Screen },
       profile_screen: { screen: Profile_Screen },
       login_screen: { screen: Login_Screen},
-      main_screen: { screen: MainNavigator},
+      main_screen: { screen: MainNavigator, navigationOptions: () => ({title: `Fitness Planner`}),},
       add_log_screen: {screen: AddLog },
       view_log_screen: {screen: ViewLog}
       },

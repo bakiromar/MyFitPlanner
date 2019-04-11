@@ -28,7 +28,6 @@ class Menu_Screen extends Component {
   static navigationOptions = {
     headerTitle: 'Home',
     tabBarLabel: 'Home',
-    title:'Welcome to Fitness Planner',
     tabBarIcon: ({ tintColor }) => (
       <RkText
         rkType='awesome'
@@ -49,7 +48,7 @@ class Menu_Screen extends Component {
         <View style={styles.section}>
 
           <View style={[styles.row, styles.heading]}>
-              <RkText rkType='h6'>Welcome to Fitness Planner</RkText>
+              <RkText rkType='h6'></RkText>
             </View>
 
           <RkButton rkType='log' onPress={() => this.props.navigation.navigate("add_log_screen", {

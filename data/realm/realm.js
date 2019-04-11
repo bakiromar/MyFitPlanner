@@ -1,5 +1,4 @@
 import Realm from 'realm';
-import schemas from './migrations';
 
 let nextSchemaIndex = Realm.schemaVersion(Realm.defaultPath);
 while (nextSchemaIndex < schemas.length) {

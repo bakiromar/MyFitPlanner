@@ -72,7 +72,7 @@ const mapStateToProps = ({ auth }) => {
 
 let styles = RkStyleSheet.create(theme => ({
   image: {
-    resizeMode: 'cover',
+    resizeMode: 'contain',
     marginBottom: scaleVertical(10),
   },
   profileImage: {
