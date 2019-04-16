@@ -11,7 +11,7 @@ export default class ListItem extends Component {
     static navigationOptions={
         title:'Workouts',
         headerStyle:{
-            backgroundColor: '#f4511e',
+            backgroundColor: '#26547C',
         },
         headerTintColor: '#fff',
         headerTitleStyle:{

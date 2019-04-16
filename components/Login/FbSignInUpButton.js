@@ -17,7 +17,7 @@ import {scale} from './../../utils/scale';
 class FbSignInUpButton extends Component {
 
   _pressSignInUp() {
-    if (this.props.emailPwdBtnStr == 'SignIn') {
+    if (this.props.emailPwdBtnStr == 'Sign In') {
         this.props.facebookSignin();
     } else {
       const { email, phone, firstname, lastname } = this.props;

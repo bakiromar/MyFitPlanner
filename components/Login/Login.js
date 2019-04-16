@@ -59,7 +59,7 @@ class Login extends Component {
   }
 
   _renderEmailPwdOption() {
-    if ( this.props.emailPwdBtnStr == 'SignIn' || this.state.showEmailPwdState ) {
+    if ( this.props.emailPwdBtnStr == 'Sign In' || this.state.showEmailPwdState ) {
       // In the case of login screen or if the email pwd button is pressed
       return (
         <View>
@@ -87,7 +87,7 @@ class Login extends Component {
 
       if ( this.props.loginStatus != 'fbchecking' ) {
           // if login status is not fbchecking then react to keyboard up as usual
-          keyboardUp_justifyContent = (this.state.keyboardflag) ? 'flex-start' : 'space-between';
+          keyboardUp_justifyContent = 'space-between';
       }
       else {
         console.log(this.props.loginStatus);
@@ -97,7 +97,7 @@ class Login extends Component {
       }
 
       // for the case where there is signup and showemailpwdstate button is not pressed
-      if ( this.props.emailPwdBtnStr=='SignUp' && !this.state.showEmailPwdState ) {
+      if ( this.props.emailPwdBtnStr=='Sign Up' && !this.state.showEmailPwdState ) {
         keyboardUp_justifyContent = 'flex-start';
       }
 
@@ -120,10 +120,6 @@ class Login extends Component {
               keyboardflag = {this.state.keyboardflag}
               emailPwdBtnStr={this.props.emailPwdBtnStr}
               />
-          </View>
-
-          <View style={{ ...FbButtonSize, ...android_styles_container }}>
-            <FbSignInUpButton emailPwdBtnStr={this.props.emailPwdBtnStr} fbBtnStr={this.props.fbBtnStr} />
           </View>
 
           {this._renderEmailPwdOption()}

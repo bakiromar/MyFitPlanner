@@ -35,7 +35,7 @@ class LoginHeaderImage extends Component {
 
     if ( this.props.keyboardflag == false || this.props.loginStatus == 'fbchecking' || this.state.fbcheckingFinished) {
 
-        if ( this.props.emailPwdBtnStr == 'SignUp' || this.props.emailPwdBtnStr == 'SignIn') {
+        if ( this.props.emailPwdBtnStr == 'Sign Up' || this.props.emailPwdBtnStr == 'Sign In') {
           let contentHeight = scaleModerate(375, 1);
           let height = Dimensions.get('window').height - contentHeight;
           let width = Dimensions.get('window').width;

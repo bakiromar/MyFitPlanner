@@ -55,6 +55,18 @@ export default class ItemComponent extends Component {
                         <Text style={styles.itemtext}>{item.lbs3}lbs</Text>
                       </View>
 
+                      <View style={styles.set}>
+                      <Text style={styles.itemtext}>Set 4</Text>
+                        <Text style={styles.itemtext}>Reps {item.reps4}</Text>
+                        <Text style={styles.itemtext}>{item.lbs4}lbs</Text>
+                      </View>
+
+                      <View style={styles.set}>
+                      <Text style={styles.itemtext}>Set 5</Text>
+                        <Text style={styles.itemtext}>Reps {item.reps5}</Text>
+                        <Text style={styles.itemtext}>{item.lbs5}lbs</Text>
+                      </View>
+
                       <View style={styles.bottom}>
                       <Text style={styles.bottomText}>{item.muscle}</Text>
                       <RkButton rkType='delete' onPress={() => Alert.alert(

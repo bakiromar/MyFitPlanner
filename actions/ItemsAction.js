@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 
-export const addLog = (date, name, muscle, reps1,reps2, reps3, lbs1, lbs2, lbs3 ) => {
+export const addLog = (date, name, muscle, reps1,reps2,reps3,reps4,reps5, lbs1,lbs2,lbs3,lbs4,lbs5 ) => {
     
     // var myRef = db.ref('/items').push();
     // var key = myRef.key;
@@ -14,10 +14,14 @@ export const addLog = (date, name, muscle, reps1,reps2, reps3, lbs1, lbs2, lbs3 
         muscle,
         reps1,
         reps2, 
-        reps3, 
+        reps3,
+        reps4,
+        reps5, 
         lbs1, 
         lbs2, 
-        lbs3 
+        lbs3,
+        lbs4,
+        lbs5 
     };
     firebase.database().ref(`/users/${currentUser.uid}/items`).push((items))
 }

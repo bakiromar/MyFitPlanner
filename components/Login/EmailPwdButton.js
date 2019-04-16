@@ -16,7 +16,7 @@ class EmailPwdButton extends Component {
 
   onButtonPress() {
 
-    if (this.props.emailPwdBtnStr == 'SignIn') {
+    if (this.props.emailPwdBtnStr == 'Sign In') {
         const { email, password } = this.props;
         if ( this.validateInput('email', email) && this.validateInput('password', password)) {
           this.props.loginUser({ email, password });
@@ -25,7 +25,7 @@ class EmailPwdButton extends Component {
         }
     }
 
-    if (this.props.emailPwdBtnStr == 'SignUp') {
+    if (this.props.emailPwdBtnStr == 'Sign Up') {
         const { email, password, phone, firstname, lastname } = this.props;
         if ( this.validateInput('email', email) && this.validateInput('password', password)) {
           this.props.signupUser({ email, password, phone, firstname, lastname });

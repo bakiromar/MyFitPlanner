@@ -1,5 +1,5 @@
 node_modules/**/*
 .expo/*
 npm-debug.*
-config/auth/facebook_info.js
-config/auth/firebase_info.js
+config/auth/facebook_info_real.js
+config/auth/firebase_info_real.js

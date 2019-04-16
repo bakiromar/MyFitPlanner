@@ -15,8 +15,7 @@ class Register_Screen extends Component {
   render() {
       return (
           <Login
-            emailPwdBtnStr='SignUp'
-            fbBtnStr='Facebook SignUp'
+            emailPwdBtnStr='Sign Up'
             showEmailPwdOption={false} // the email password option will be hidden
             onNavString1='Already have an account?'
             onNavString2=' Sign In now'
@@ -27,6 +26,4 @@ class Register_Screen extends Component {
   }
 }
 
-export default connect(null, {
-  facebookSignin
-})(Register_Screen);
+export default Register_Screen;

@@ -86,7 +86,7 @@ class Settings_Screen extends Component {
           <LoadingSpinner />
           <View style={styles.section}>
             <View style={[styles.row, styles.heading]}>
-              <RkText rkType='header6 primary'>Profile's Setting</RkText>
+              <RkText rkType='header5 primary' style={{color: 'black'}}>Profile Information</RkText>
             </View>
             <View style={styles.row}>
               <RkTextInput label='First Name'
