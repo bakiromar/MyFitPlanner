@@ -47,7 +47,7 @@ class FooterNavButtons extends Component {
     android_s_c_justifyContent = 'flex-start';
     let android_styles_footer = {justifyContent: android_s_c_justifyContent};
     */
-    if ( this.props.emailPwdBtnStr=='SignUp'  && !this.props.showEmailPwdState) {
+    if ( this.props.emailPwdBtnStr=='Sign Up'  && !this.props.showEmailPwdState) {
         // In the case when we are on register screen and the show email-pwd button is not pressed
         // console.log('show email password option');
         // {...styles.footer, ...

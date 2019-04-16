@@ -16,8 +16,7 @@ class Login_Screen extends Component {
     console.log('Login_Screen:Line 15: Rendering Login_Screen');
       return (
           <Login
-            emailPwdBtnStr='SignIn'
-            fbBtnStr='Facebook Signin'
+            emailPwdBtnStr='Sign In'
             showEmailPwdOption={true}
             onNavString1='Don’t have an account?'
             onNavString2=' Sign Up now'
@@ -28,6 +27,4 @@ class Login_Screen extends Component {
   }
 }
 
-export default connect(null, {
-  facebookSignin
-})(Login_Screen);
+export default Login_Screen;

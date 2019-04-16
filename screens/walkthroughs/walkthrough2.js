@@ -12,7 +12,7 @@ import {
 import {scale, scaleModerate, scaleVertical} from './../../utils/scale';
 
 
-export class Walkthrough1 extends React.Component {
+export class Walkthrough2 extends React.Component {
 
   constructor(props) {
     super(props);
@@ -32,11 +32,11 @@ export class Walkthrough1 extends React.Component {
     let height_sub = height;
     let width_sub = width - 40;
 
-    image = <Image style={{ height: height_sub, width: width_sub }} source={require('../../assets/images/biking.png')}/> ;
+    image = <Image style={{ resizeMode: 'contain', height: height_sub, width: width_sub }} source={require('../../assets/images/location.png')}/> ;
     return (
       <View style={styles.screen}>
         {image}
-        <RkText rkType='header2' style={styles.text}>Plan your workouts ahead</RkText>
+        <RkText rkType='header2' style={styles.text}>Locate your nearest gym</RkText>
       </View>
     )
   }

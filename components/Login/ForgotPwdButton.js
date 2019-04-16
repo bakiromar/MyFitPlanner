@@ -9,7 +9,7 @@ class ForgotPwdButton extends Component {
 
   _renderForgotPassword() {
 
-    if ( this.props.emailPwdBtnStr == 'SignIn') {
+    if ( this.props.emailPwdBtnStr == 'Sign In') {
       let android_forgot_pwd = { marginBottom: 10} ;
       return (
         <View style={{...styles.textRow, ...android_forgot_pwd}}>

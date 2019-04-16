@@ -11,7 +11,7 @@ export default class AddLog extends Component {
     static navigationOptions={
         title:'Add Workout',
         headerStyle:{
-            backgroundColor: '#f4511e',
+            backgroundColor: '#26547C',
         },
         headerTintColor: '#fff',
         headerTitleStyle:{
@@ -28,12 +28,17 @@ export default class AddLog extends Component {
           reps1: 0,
           reps2:0,
           reps3:0,
+          reps4:0,
+          reps5:0,
           lbs1:0,
           lbs2:0,
           lbs3:0,
+          lbs4:0,
+          lbs5:0,
           data: [
             "Legs",
             "Abs",
+            "Chest",
             "Back",
             "Shoulders",
             "Arm"
@@ -50,7 +55,9 @@ export default class AddLog extends Component {
       });
   }
   handleSubmit(){
-      addLog(this.state.date, this.state.name, this.state.muscle, this.state.reps1, this.state.reps2, this.state.reps3, this.state.lbs1,this.state.lbs2,this.state.lbs3);
+      addLog(this.state.date, this.state.name, this.state.muscle, 
+             this.state.reps1,this.state.reps2,this.state.reps3,this.state.reps4,this.state.reps5, 
+             this.state.lbs1,this.state.lbs2,this.state.lbs3,this.state.lbs4,this.state.lbs5);
       Alert.alert('Log Saved Successfully');
   }
 
@@ -167,6 +174,42 @@ export default class AddLog extends Component {
                 onChangeText={(text) => this.setState({lbs3: text})}
               />
             </View>
+
+            <View style={styles.set}>
+              <RkText> 4</RkText>
+              <TextInput
+                style={styles.text_input}
+                returnKeyType="done"
+                keyboardType="numeric"
+                placeholder="20"
+                onChangeText={(text) => this.setState({reps4: text})}
+              />
+              <TextInput
+                style={styles.text_input}
+                returnKeyType="done"
+                keyboardType="numeric"
+                placeholder="100"
+                onChangeText={(text) => this.setState({lbs4: text})}
+              />
+            </View>
+
+            <View style={styles.set}>
+              <RkText> 5</RkText>
+              <TextInput
+                style={styles.text_input}
+                returnKeyType="done"
+                keyboardType="numeric"
+                placeholder="20"
+                onChangeText={(text) => this.setState({reps5: text})}
+              />
+              <TextInput
+                style={styles.text_input}
+                returnKeyType="done"
+                keyboardType="numeric"
+                placeholder="100"
+                onChangeText={(text) => this.setState({lbs5: text})}
+              />
+            </View>
             </View>
 
             <View style={styles.button_container}>
@@ -200,6 +243,7 @@ RkTheme.setType('RkButton', 'add', {
     alignSelf: 'center',
     alignItems:'center',
     borderRadius: 20,
+    borderColor: "#26547C",
     borderWidth:3,
     width:'70%',
     height:'25%'

@@ -48,8 +48,12 @@ class Menu_Screen extends Component {
         <View style={styles.section}>
 
           <View style={[styles.row, styles.heading]}>
-              <RkText rkType='h6'></RkText>
-            </View>
+            <RkText rkType='h6'>Welcome to the Fitness Planner App</RkText>
+          </View>
+
+          <View style={[styles.row, styles.heading]}>
+            <RkText rkType='h6'></RkText>
+          </View>
 
           <RkButton rkType='log' onPress={() => this.props.navigation.navigate("add_log_screen", {
               })
@@ -90,7 +94,7 @@ RkTheme.setType('RkButton', 'log', {
     backgroundColor: 'white',
     borderWidth:3,
     borderRadius: 10,
-    borderColor: "#ed1c4d",
+    borderColor: "#26547C",
     alignSelf: 'center',
     height:130,
     width:"100%",

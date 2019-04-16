@@ -8,6 +8,7 @@ import {RkStyleSheet} from 'react-native-ui-kitten';
 import {GradientButton} from './../components/';
 import {Walkthrough} from './../components/walkthrough';
 import {Walkthrough1} from './walkthroughs/walkthrough1';
+import {Walkthrough2} from './walkthroughs/walkthrough2';
 import {PaginationIndicator} from './../components';
 import { loginStatusChanged, authStateChanged, fontLoadedChanged } from '../actions';
 import AppSpinner from './../components/Loading/AppSpinner';
@@ -78,7 +79,11 @@ class Welcome_Screen extends Component {
     return (
       <View style={styles.screen}>
         <ErrorMessage />
+        <Walkthrough onChanged={(index) => this.changeIndex(index)}>
           <Walkthrough1/>
+          <Walkthrough2/>
+        </Walkthrough>
+        <PaginationIndicator length={2} current={this.state.index}/>
         <GradientButton
           rkType='large'
           style={styles.button}
@@ -100,7 +105,7 @@ const mapStateToProps = ({ auth }) => {
 
 let styles = RkStyleSheet.create(theme => ({
   screen: {
-    backgroundColor: '#2f2f2f',
+    backgroundColor: '#26547C',
     paddingVertical: 0,
     alignItems: 'center',
     flex: 1,
