@@ -49,16 +49,19 @@ export default class AddLog extends Component {
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
   }
+
   handleChange(e){
       this.setState({
           name: e.nativeEvent.text,
       });
   }
+  
   handleSubmit(){
       addLog(this.state.date, this.state.name, this.state.muscle, 
              this.state.reps1,this.state.reps2,this.state.reps3,this.state.reps4,this.state.reps5, 
              this.state.lbs1,this.state.lbs2,this.state.lbs3,this.state.lbs4,this.state.lbs5);
       Alert.alert('Log Saved Successfully');
+      this.props.navigation.goBack();
   }
 
   componentDidMount() {
