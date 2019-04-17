@@ -32,7 +32,7 @@ export class Walkthrough1 extends React.Component {
     let height_sub = height;
     let width_sub = width - 40;
 
-    image = <Image style={{ height: height_sub, width: width_sub }} source={require('../../assets/images/biking.png')}/> ;
+    image = <Image style={{ resizeMode: 'contain', height: height_sub, width: width_sub }} source={require('../../assets/images/weights.png')}/> ;
     return (
       <View style={styles.screen}>
         {image}

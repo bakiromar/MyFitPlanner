@@ -68,7 +68,6 @@ export default class ItemComponent extends Component {
                       </View>
 
                       <View style={styles.bottom}>
-                      <Text style={styles.bottomText}>{item.muscle}</Text>
                       <RkButton rkType='delete' onPress={() => Alert.alert(
                           'Delete ' + name,
                           //waikits work//

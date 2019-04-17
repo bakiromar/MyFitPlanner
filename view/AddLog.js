@@ -35,15 +35,6 @@ export default class AddLog extends Component {
           lbs3:0,
           lbs4:0,
           lbs5:0,
-          data: [
-            "Legs",
-            "Abs",
-            "Chest",
-            "Back",
-            "Shoulders",
-            "Arm"
-          ],
-          muscle: '',
           error: false
       }
       this.handleChange = this.handleChange.bind(this);
@@ -57,7 +48,7 @@ export default class AddLog extends Component {
   }
   
   handleSubmit(){
-      addLog(this.state.date, this.state.name, this.state.muscle, 
+      addLog(this.state.date, this.state.name,
              this.state.reps1,this.state.reps2,this.state.reps3,this.state.reps4,this.state.reps5, 
              this.state.lbs1,this.state.lbs2,this.state.lbs3,this.state.lbs4,this.state.lbs5);
       Alert.alert('Log Saved Successfully');
@@ -88,33 +79,6 @@ export default class AddLog extends Component {
                 returnKeyType="done"
                 placeholder="Routine Name"
                 onChange={this.handleChange}/>
-            </View>
-
-            <View>
-              <TouchableOpacity onPress={() => {this.pickerRef.show()}}>
-                <RkText>Select Muscle 
-                  <RkText> </RkText>
-                  <Icon
-                    name='sort-down'
-                    type='font-awesome'
-                  />
-                  <RkText>        {this.state.muscle}</RkText>
-              </RkText>
-                
-              </TouchableOpacity>
-              
-              <ReactNativePickerModule
-                pickerRef={e => this.pickerRef = e}
-                value={this.state.selectedValue}
-                title={"Select a muscle"}
-                items={this.state.data}
-                onValueChange={(index) => {
-                  this.setState({
-                    muscle: this.state.data[index]
-                  })
-              }}/>
-              
-              
             </View>
 
             <View style={styles.mainSet}>
