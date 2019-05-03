@@ -5,7 +5,7 @@
     "slug": "fitness-planner",
     "privacy": "public",
     "sdkVersion": "28.0.0",
-    "version": "1.0.0",
+    "version": "3.0.0",
     "orientation": "portrait",
     "primaryColor": "#cccccc",
     "icon": "./assets/icons/app-icon.png",
@@ -17,7 +17,12 @@
       "assetExts": ["ttf", "mp4"]
     },
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.techatservice.myfitplanner"
+    },
+	"android": {
+      "package": "com.techatservice.myfitplanner",
+	  "versionCode": 3,
+	  "permissions": []
     }
   }
 }
