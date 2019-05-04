@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "fitness-planner",
+    "name": "MyFitPlanner",
     "description": "A workout app.",
     "slug": "fitness-planner",
     "privacy": "public",
     "sdkVersion": "28.0.0",
-    "version": "3.0.0",
+    "version": "4.0.0",
     "orientation": "portrait",
     "primaryColor": "#cccccc",
     "icon": "./assets/icons/app-icon.png",
@@ -19,10 +19,13 @@
     "ios": {
       "bundleIdentifier": "com.techatservice.myfitplanner"
     },
-	"android": {
+	  "android": {
       "package": "com.techatservice.myfitplanner",
-	  "versionCode": 3,
-	  "permissions": []
+	    "versionCode": 4,
+	    "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
     }
   }
 }
