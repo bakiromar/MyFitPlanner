@@ -83,7 +83,7 @@ export default class MapComponent extends Component {
         console.log(this.state.region.latitude);
         console.log(this.state.region.longitude);
         fetch(
-            `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${this.state.region.latitude},${this.state.region.longitude}&radius=2000&types=gym&key=AIzaSyCF7tzF8XX8gDJhGYzU2rQWV32sFdOLlR0`
+            `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${this.state.region.latitude},${this.state.region.longitude}&radius=2000&types=gym&key=Your Google Places API Here`
         )
         .then (res => res.json()) 
         .then(json => {

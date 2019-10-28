@@ -4,8 +4,8 @@
     "description": "A workout app.",
     "slug": "fitness-planner",
     "privacy": "public",
-    "sdkVersion": "28.0.0",
-    "version": "4.0.0",
+    "sdkVersion": "33.0.0",
+    "version": "5.0.0",
     "orientation": "portrait",
     "primaryColor": "#cccccc",
     "icon": "./assets/icons/app-icon.png",
@@ -21,7 +21,12 @@
     },
 	  "android": {
       "package": "com.techatservice.myfitplanner",
-	    "versionCode": 4,
+      "config": {
+        "googleMaps": {
+          "apiKey": "Your Google Places API Here"
+        }
+      },
+	    "versionCode": 5,
 	    "permissions": [
         "ACCESS_COARSE_LOCATION",
         "ACCESS_FINE_LOCATION"
