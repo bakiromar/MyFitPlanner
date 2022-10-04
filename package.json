@@ -8,7 +8,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "babel-plugin-transform-react-jsx-source": "^6.22.0",
-    "expo": "^33.0.0",
+    "expo": "^46.0.14",
     "expo-permissions": "~5.0.1",
     "firebase": "^5.9.3",
     "material-icons": "^0.3.1",
